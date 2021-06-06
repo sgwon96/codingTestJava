@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 import java.util.StringTokenizer;
 
@@ -6,7 +5,7 @@ public class scanPrint {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        // 1010
+        /*// 1010
         int n = sc.nextInt();
         System.out.println(n);
 
@@ -58,6 +57,8 @@ public class scanPrint {
         String front = number.substring(0, 6);
         String back = number.substring(7);
         System.out.println(front+back);
-
+*/
+        String str = sc.nextLine();
+        System.out.println(str);
     }
 }
