@@ -1,12 +1,12 @@
 package ShortestPath;
 import java.util.*;
 
-class Node {
+class Node1 {
 
     private int index;
     private int distance;
 
-    public Node(int index, int distance) {
+    public Node1(int index, int distance) {
         this.index = index;
         this.distance = distance;
     }
@@ -59,7 +59,7 @@ public class Dijkstra {
             int now = getSmallestNode();
             visited[now] = true;
             // 현재 노드와 연결된 다른 노드를 확인
-            for (int j ; j < graph.get(now).size() ; j++) {
+            for (int j = 0 ; j < graph.get(now).size() ; j++) {
                 int cost = d[now] + graph.get(now).get(j).getDistance();
                 // 현재 노드를 거쳐서 다른 노드로 이동하는 거리가 더 짧은 경우
                 if (cost < d[graph.get(now).get(j).getIndex()])
